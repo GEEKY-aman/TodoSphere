@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: [true, 'Password is required'],
-        minlength: 6
+        minlength: 5 // Lowered to 5 to allow '12345'
     }
 }, {
     timestamps: true

@@ -15,6 +15,12 @@ const Signup: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
+
+    if (password.length < 5) {
+      setError('Password must be at least 5 characters long');
+      return;
+    }
+
     setLoading(true);
     try {
       // Signup now returns user and token directly

@@ -42,9 +42,9 @@ npm install
 cp .env.example .env
 
 # Edit .env with your MongoDB URI and JWT secret
-# MONGODB_URI=mongodb://localhost:27017/todoflow
-# JWT_SECRET=your_super_secret_key
-# PORT=5000
+# MONGODB_URI=your_mongodb_connection_string
+# JWT_SECRET=your_jwt_secret_key
+# PORT=5001
 
 npm run dev
 ```
@@ -125,9 +125,9 @@ The frontend runs on `http://localhost:5173` and the backend on `http://localhos
 
 ### Backend (.env)
 ```
-MONGODB_URI=mongodb://localhost:27017/todoflow
-JWT_SECRET=your_super_secret_key_change_this
-PORT=5000
-FRONTEND_URL=http://localhost:5173
+MONGODB_URI=your_mongodb_connection_string # Place your MongoDB URL here
+JWT_SECRET=your_jwt_secret_key # Place your JWT secret key here
+PORT=5001
+FRONTEND_URL=http://localhost:3000
 NODE_ENV=development
 ```
